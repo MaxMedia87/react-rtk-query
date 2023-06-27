@@ -1,9 +1,7 @@
-import { useState } from 'react';
 import './App.css';
 import { useGetGoodsQuery } from './redux'
 
 function App() {
-  const [coutn, setCount] = useState('');
   const {data = [], isLoading} = useGetGoodsQuery();
 
   if (isLoading) {
